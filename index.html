@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital Soul — socio de medios, contenido y datos que diseña crecimiento de negocio medible para las marcas más ambiciosas de Latinoamérica." />
+  <title>Digital Soul — Crecimiento, Medios, Contenido y Datos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./estilos/estilos.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Inicio Digital Soul">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="dsmark" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#E53935" />
+                <stop offset="0.55" stop-color="#FF5A52" />
+                <stop offset="1" stop-color="#FF6B57" />
+              </linearGradient>
+            </defs>
+            <path d="M6 5h10c7.2 0 11.5 4.4 11.5 11S23.2 27 16 27H6V5Zm6 5.2v11.6h3.4c3.9 0 6.2-2.2 6.2-5.8s-2.3-5.8-6.2-5.8H12Z" fill="url(#dsmark)" />
+          </svg>
+        </span>
+        <span class="brand__word">Digital<span>Soul</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#work">Casos</a>
+        <a href="#capabilities">Capacidades</a>
+        <a href="#process">Proceso</a>
+        <a href="#results">Resultados</a>
+        <a href="#insights">Ideas</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--pill" data-magnetic>Hablemos</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#work">Casos</a>
+      <a href="#capabilities">Capacidades</a>
+      <a href="#process">Proceso</a>
+      <a href="#results">Resultados</a>
+      <a href="#insights">Ideas</a>
+      <a href="#contact" class="btn btn--pill">Hablemos</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline poster="./assets/galicia.png">
+          <source src="./assets/DS_Web_Intro.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__scrim"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="eyebrow__dot"></span>
+          Medios&nbsp;·&nbsp;Contenido&nbsp;·&nbsp;Datos&nbsp;·&nbsp;Performance
+        </p>
+
+        <h1 class="hero__title reveal" data-reveal>
+          Diseñamos sistemas de crecimiento para marcas que no se conforman con el
+          <span class="grad-text">promedio.</span>
+        </h1>
+
+        <p class="hero__sub reveal" data-reveal>
+          Somos el socio de medios, contenido y datos que convierte la inversión
+          en resultados de negocio medibles para las marcas más ambiciosas de la región.
+        </p>
+
+        <div class="hero__cta reveal" data-reveal>
+          <a href="#contact" class="btn btn--primary btn--lg" data-magnetic>Hablemos
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#work" class="btn btn--ghost btn--lg" data-magnetic>Ver nuestro trabajo</a>
+        </div>
+
+        <div class="hero__metrics reveal" data-reveal>
+          <div class="metric"><span class="metric__num" data-count="500" data-suffix="+">0</span><span class="metric__label">Campañas ejecutadas</span></div>
+          <div class="metric"><span class="metric__num" data-count="40" data-suffix="+">0</span><span class="metric__label">Marcas enterprise</span></div>
+          <div class="metric"><span class="metric__num" data-count="8" data-suffix="">0</span><span class="metric__label">Mercados</span></div>
+          <div class="metric"><span class="metric__num" data-count="9" data-suffix=" años">0</span><span class="metric__label">Generando crecimiento</span></div>
+        </div>
+      </div>
+
+      <a href="#trust" class="hero__scroll" aria-label="Desplazar">
+        <span></span> Scroll
+      </a>
+    </section>
+
+    <!-- ============ 02 TRUST ============ -->
+    <section class="trust" id="trust">
+      <div class="container trust__head">
+        <p class="trust__label">Marcas líderes que confían en nosotros</p>
+      </div>
+      <div class="marquee" aria-label="Logos de clientes">
+        <div class="marquee__track">
+          <span class="logo-word">Galicia</span>
+          <span class="logo-word">La Serenísima</span>
+          <span class="logo-word">Las Marías</span>
+          <span class="logo-word">Rapipago</span>
+          <span class="logo-word">Warner Music</span>
+          <span class="logo-word">Chery</span>
+          <span class="logo-word">Grupo Petersen</span>
+          <span class="logo-word">Mastellone</span>
+          <!-- duplicado para loop continuo -->
+          <span class="logo-word">Galicia</span>
+          <span class="logo-word">La Serenísima</span>
+          <span class="logo-word">Las Marías</span>
+          <span class="logo-word">Rapipago</span>
+          <span class="logo-word">Warner Music</span>
+          <span class="logo-word">Chery</span>
+          <span class="logo-word">Grupo Petersen</span>
+          <span class="logo-word">Mastellone</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 WHAT WE DO ============ -->
+    <section class="pillars section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker reveal" data-reveal>01 — Qué hacemos</p>
+          <h2 class="section__title reveal" data-reveal>Tres disciplinas.<br/>Un motor de crecimiento.</h2>
+          <p class="section__lead reveal" data-reveal>Integramos medios, contenido y datos en un mismo sistema operativo, para que cada peso invertido se transforme en resultados de negocio.</p>
+        </header>
+
+        <div class="pillars__grid">
+          <article class="pillar card reveal" data-reveal data-tilt>
+            <div class="pillar__top">
+              <span class="pillar__index">M</span>
+              <span class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7h5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <h3 class="pillar__title">Medios</h3>
+            <p class="pillar__desc">Planificación y compra de medios full-funnel que convierte audiencias en ingresos en cada canal.</p>
+            <ul class="pillar__list">
+              <li>Estrategia omnicanal</li>
+              <li>Performance y paid social</li>
+              <li>Programática y retail media</li>
+            </ul>
+          </article>
+
+          <article class="pillar card reveal" data-reveal data-tilt>
+            <div class="pillar__top">
+              <span class="pillar__index">C</span>
+              <span class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 2-5 2V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <h3 class="pillar__title">Contenido</h3>
+            <p class="pillar__desc">Creatividad social-first y producción premium pensada para ganar atención y mover la cultura al ritmo del feed.</p>
+            <ul class="pillar__list">
+              <li>Creatividad y dirección de arte</li>
+              <li>Producción always-on</li>
+              <li>Creadores e influencia</li>
+            </ul>
+          </article>
+
+          <article class="pillar card reveal" data-reveal data-tilt>
+            <div class="pillar__top">
+              <span class="pillar__index">D</span>
+              <span class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <h3 class="pillar__title">Datos</h3>
+            <p class="pillar__desc">Inteligencia de negocio, medición y automatización que vuelven el crecimiento predecible, no accidental.</p>
+            <ul class="pillar__list">
+              <li>Analítica y BI</li>
+              <li>Medición avanzada</li>
+              <li>CRM y automatización</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03.5 DATA INTELLIGENCE ============ -->
+    <section class="intel section" id="intel">
+      <div class="intel__bg" aria-hidden="true"></div>
+      <div class="container intel__grid">
+        <div class="intel__copy">
+          <p class="kicker reveal" data-reveal>Inteligencia de datos</p>
+          <h2 class="section__title reveal" data-reveal>Decisiones en tiempo real,<br/>no reportes a fin de mes.</h2>
+          <p class="section__lead reveal" data-reveal>Centralizamos medios, contenido y negocio en un mismo tablero. Medimos lo que mueve la aguja y ajustamos la inversión mientras la campaña corre.</p>
+          <ul class="intel__list reveal" data-reveal>
+            <li><span class="intel__dot"></span>Medición de ciclo cerrado y atribución</li>
+            <li><span class="intel__dot"></span>Optimización de presupuesto en vivo</li>
+            <li><span class="intel__dot"></span>Alertas y automatización de campañas</li>
+          </ul>
+        </div>
+
+        <div class="dash reveal" data-reveal aria-label="Tablero de performance">
+          <div class="dash__bar">
+            <span class="dash__dots"><i></i><i></i><i></i></span>
+            <span class="dash__title">Performance · Tiempo real</span>
+            <span class="dash__live"><span class="dash__live-dot"></span>EN VIVO</span>
+          </div>
+
+          <div class="dash__kpis">
+            <div class="dash__kpi">
+              <span class="dash__kpi-label">ROAS</span>
+              <span class="dash__kpi-val"><span data-count="3.8" data-decimals="1">0</span>x</span>
+              <span class="dash__kpi-delta dash__kpi-delta--up">▲ 12%</span>
+            </div>
+            <div class="dash__kpi">
+              <span class="dash__kpi-label">CAC</span>
+              <span class="dash__kpi-val">$<span data-count="214">0</span></span>
+              <span class="dash__kpi-delta dash__kpi-delta--down">▼ 31%</span>
+            </div>
+            <div class="dash__kpi">
+              <span class="dash__kpi-label">Conversiones</span>
+              <span class="dash__kpi-val"><span data-count="18.6" data-decimals="1">0</span>K</span>
+              <span class="dash__kpi-delta dash__kpi-delta--up">▲ 61%</span>
+            </div>
+          </div>
+
+          <div class="dash__chart">
+            <div class="dash__chart-head">
+              <span>Ingresos atribuidos</span>
+              <span class="dash__chart-tag">Últimos 30 días</span>
+            </div>
+            <svg class="dash__svg" viewBox="0 0 420 150" preserveAspectRatio="none" role="img" aria-label="Curva de ingresos atribuidos">
+              <defs>
+                <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#E53935" stop-opacity="0.42" />
+                  <stop offset="1" stop-color="#E53935" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#FF6B57" />
+                  <stop offset="1" stop-color="#FF5A52" />
+                </linearGradient>
+              </defs>
+              <line x1="0" y1="37" x2="420" y2="37" class="dash__gridline" />
+              <line x1="0" y1="75" x2="420" y2="75" class="dash__gridline" />
+              <line x1="0" y1="113" x2="420" y2="113" class="dash__gridline" />
+              <path class="dash__area" d="M0,118 C40,110 70,92 110,96 C150,100 175,70 210,64 C250,57 280,40 320,34 C360,28 390,22 420,16 L420,150 L0,150 Z" fill="url(#areaGrad)" />
+              <path class="dash__line" d="M0,118 C40,110 70,92 110,96 C150,100 175,70 210,64 C250,57 280,40 320,34 C360,28 390,22 420,16" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round" />
+              <circle class="dash__pulse" cx="420" cy="16" r="4" fill="#FF6B57" />
+            </svg>
+          </div>
+
+          <div class="dash__bars">
+            <span style="--h:46%"></span>
+            <span style="--h:62%"></span>
+            <span style="--h:38%"></span>
+            <span style="--h:74%"></span>
+            <span style="--h:55%"></span>
+            <span style="--h:88%"></span>
+            <span style="--h:67%"></span>
+            <span style="--h:96%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 CAPABILITIES ============ -->
+    <section class="caps section" id="capabilities">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="kicker reveal" data-reveal>02 — Capacidades</p>
+            <h2 class="section__title reveal" data-reveal>Un stack completo<br/>bajo un mismo techo.</h2>
+          </div>
+          <p class="section__lead reveal" data-reveal>Del primer insight a la última conversión: diez capacidades integradas, orquestadas como un solo equipo.</p>
+        </header>
+
+        <div class="caps__grid">
+          <button class="cap reveal" data-reveal><span class="cap__no">01</span><span class="cap__name">Estrategia de Medios</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">02</span><span class="cap__name">Performance Marketing</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">03</span><span class="cap__name">Influencer Marketing</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">04</span><span class="cap__name">Producción Creativa</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">05</span><span class="cap__name">Estrategia de Contenido</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">06</span><span class="cap__name">Business Intelligence</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">07</span><span class="cap__name">Integración de CRM</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">08</span><span class="cap__name">Analítica</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">09</span><span class="cap__name">Automatización</span><span class="cap__arrow">→</span></button>
+          <button class="cap reveal" data-reveal><span class="cap__no">10</span><span class="cap__name">Medición Avanzada</span><span class="cap__arrow">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 CASE STUDIES ============ -->
+    <section class="work section" id="work">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="kicker reveal" data-reveal>03 — Casos seleccionados</p>
+            <h2 class="section__title reveal" data-reveal>Resultados,<br/>no impresiones.</h2>
+          </div>
+          <p class="section__lead reveal" data-reveal>Arrastrá para explorar. Cada proyecto se mide por su impacto en el negocio, no por métricas de vanidad.</p>
+        </header>
+      </div>
+
+      <div class="work__scroller" id="workScroller">
+        <div class="work__track">
+
+          <article class="case reveal" data-reveal>
+            <div class="case__media">
+              <img src="./assets/galicia.png" alt="Campaña always-on de Galicia" loading="lazy" />
+            </div>
+            <div class="case__body">
+              <div class="case__tags"><span>Banca</span><span>Performance</span><span>Always-on</span></div>
+              <h3 class="case__title">Galicia — Un banco que nunca duerme</h3>
+              <p class="case__desc">Un sistema de contenido y medios always-on que convirtió la disponibilidad 24/7 en una promesa de marca tangible.</p>
+              <div class="case__stats">
+                <div><strong>+38%</strong><span>Alcance con engagement</span></div>
+                <div><strong>−24%</strong><span>Costo por lead</span></div>
+                <div><strong>24/7</strong><span>Always-on</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case reveal" data-reveal>
+            <div class="case__media">
+              <img src="./assets/laserenisima.png" alt="Contenido premium de La Serenísima" loading="lazy" />
+            </div>
+            <div class="case__body">
+              <div class="case__tags"><span>Consumo masivo</span><span>Contenido</span><span>Marca</span></div>
+              <h3 class="case__title">La Serenísima — Oficio en cada cuadro</h3>
+              <p class="case__desc">Producción premium que transforma productos cotidianos en historias cinematográficas y social-first que viajan entre plataformas.</p>
+              <div class="case__stats">
+                <div><strong>3,2M</strong><span>Vistas orgánicas</span></div>
+                <div><strong>+52%</strong><span>Guardados y shares</span></div>
+                <div><strong>x4</strong><span>Velocidad de output</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case reveal" data-reveal>
+            <div class="case__media case__media--video">
+              <video autoplay muted loop playsinline poster="./assets/image-14.png">
+                <source src="./assets/DS_Web_cultura.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="case__body">
+              <div class="case__tags"><span>Cultura</span><span>Creadores</span><span>Social</span></div>
+              <h3 class="case__title">Motor de creadores — Hecho para el feed</h3>
+              <p class="case__desc">Un motor de contenido liderado por creadores, diseñado para subirse a los momentos culturales y convertir atención en comunidad.</p>
+              <div class="case__stats">
+                <div><strong>+280%</strong><span>ROAS promedio</span></div>
+                <div><strong>120+</strong><span>Piezas / mes</span></div>
+                <div><strong>Top 1%</strong><span>Watch-through</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case reveal" data-reveal>
+            <div class="case__media">
+              <img src="./assets/crecimiento.png" alt="Producción de contenido social-first" loading="lazy" />
+            </div>
+            <div class="case__body">
+              <div class="case__tags"><span>Entretenimiento</span><span>Datos</span><span>Crecimiento</span></div>
+              <h3 class="case__title">Crecimiento always-on — Datos en el loop</h3>
+              <p class="case__desc">Medición de ciclo cerrado que alimenta las decisiones creativas semana a semana y compone performance mes a mes.</p>
+              <div class="case__stats">
+                <div><strong>+61%</strong><span>Lift de conversión</span></div>
+                <div><strong>−31%</strong><span>CAC</span></div>
+                <div><strong>9 a 4 m</strong><span>Repago</span></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 PROCESS ============ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker reveal" data-reveal>04 — Cómo trabajamos</p>
+          <h2 class="section__title reveal" data-reveal>Un sistema, no una<br/>sucesión de campañas.</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal" data-reveal>
+            <span class="step__no">01</span>
+            <h3 class="step__title">Descubrir</h3>
+            <p class="step__desc">Mapeamos el negocio, la categoría y la audiencia, anclando la estrategia en datos y no en supuestos.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">02</span>
+            <h3 class="step__title">Planificar</h3>
+            <p class="step__desc">Un plan conectado de medios, contenido y medición, con hipótesis claras y los KPI que importan.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">03</span>
+            <h3 class="step__title">Crear</h3>
+            <p class="step__desc">Creatividad premium y nativa de cada plataforma, producida a la velocidad que exigen las marcas modernas.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">04</span>
+            <h3 class="step__title">Escalar</h3>
+            <p class="step__desc">Potenciamos lo que funciona, automatizamos el resto y componemos resultados trimestre a trimestre.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 07 RESULTS ============ -->
+    <section class="results section" id="results">
+      <div class="container">
+        <p class="kicker kicker--center reveal" data-reveal>05 — El impacto</p>
+        <h2 class="results__title reveal" data-reveal>Números que mueven<br/>el negocio.</h2>
+        <div class="results__grid">
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="3.2" data-decimals="1">0</span>B</span><span class="result__label">Impresiones entregadas</span></div>
+          <div class="result reveal" data-reveal><span class="result__num">+<span data-count="280">0</span>%</span><span class="result__label">Mejora promedio de ROAS</span></div>
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="500">0</span>+</span><span class="result__label">Campañas ejecutadas</span></div>
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="40">0</span>+</span><span class="result__label">Marcas enterprise</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 INSIGHTS ============ -->
+    <section class="insights section" id="insights">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="kicker reveal" data-reveal>06 — Ideas</p>
+            <h2 class="section__title reveal" data-reveal>Pensamiento de agencia,<br/>compartido sin vueltas.</h2>
+          </div>
+          <a href="#contact" class="link-more reveal" data-reveal>Todas las ideas →</a>
+        </header>
+
+        <div class="insights__grid">
+          <article class="post card reveal" data-reveal>
+            <div class="post__thumb post__thumb--a"><span class="post__cat">Informe</span></div>
+            <div class="post__body">
+              <p class="post__meta">Medición · 8 min</p>
+              <h3 class="post__title">Más allá del last-click: una medición que sobrevive a la privacidad</h3>
+              <span class="post__read">Leer →</span>
+            </div>
+          </article>
+          <article class="post card reveal" data-reveal>
+            <div class="post__thumb post__thumb--b"><span class="post__cat">Tendencia</span></div>
+            <div class="post__body">
+              <p class="post__meta">Creator economy · 6 min</p>
+              <h3 class="post__title">La creator economy ya es un canal de medios. Planificalo.</h3>
+              <span class="post__read">Leer →</span>
+            </div>
+          </article>
+          <article class="post card reveal" data-reveal>
+            <div class="post__thumb post__thumb--c"><span class="post__cat">Playbook</span></div>
+            <div class="post__body">
+              <p class="post__meta">Automatización · 10 min</p>
+              <h3 class="post__title">De dashboards a decisiones: datos dentro del loop de crecimiento</h3>
+              <span class="post__read">Leer →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 TESTIMONIALS ============ -->
+    <section class="quotes section" id="testimonials">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker reveal" data-reveal>07 — En sus palabras</p>
+          <h2 class="section__title reveal" data-reveal>Lo que dicen<br/>nuestros socios.</h2>
+        </header>
+        <div class="quotes__grid">
+          <figure class="quote card reveal" data-reveal>
+            <blockquote>"Digital Soul no solo gestionó nuestros medios: replanteó cómo pensamos el crecimiento. Los resultados hablan por sí solos."</blockquote>
+            <figcaption><span class="quote__name">Dirección de Marketing</span><span class="quote__role">Banco nacional</span></figcaption>
+          </figure>
+          <figure class="quote card reveal" data-reveal>
+            <blockquote>"Un socio de verdad. Estratégico, rápido y obsesionado con el número que realmente le importa al negocio."</blockquote>
+            <figcaption><span class="quote__name">VP de Marca</span><span class="quote__role">Consumo masivo líder</span></figcaption>
+          </figure>
+          <figure class="quote card reveal" data-reveal>
+            <blockquote>"El equipo creativo más fluido en datos con el que trabajamos en la región. Hacen que el crecimiento se sienta diseñado."</blockquote>
+            <figcaption><span class="quote__name">Head de Digital</span><span class="quote__role">Entretenimiento global</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 FINAL CTA ============ -->
+    <section class="cta section" id="contact">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="kicker kicker--center reveal" data-reveal>Construyamos</p>
+        <h2 class="cta__title reveal" data-reveal>¿Listos para crecer<br/><span class="grad-text">más allá del marketing?</span></h2>
+        <p class="cta__sub reveal" data-reveal>Contanos dónde querés llevar el negocio. Nosotros diseñamos el sistema para llegar.</p>
+        <div class="cta__actions reveal" data-reveal>
+          <a href="/cdn-cgi/l/email-protection#026a6d6e6342666b656b76636e716d776e2c6365676c617b" class="btn btn--primary btn--lg" data-magnetic>Construyamos algo extraordinario
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26"><path d="M6 5h10c7.2 0 11.5 4.4 11.5 11S23.2 27 16 27H6V5Zm6 5.2v11.6h3.4c3.9 0 6.2-2.2 6.2-5.8s-2.3-5.8-6.2-5.8H12Z" fill="url(#dsmark)" /></svg>
+          </span>
+          <span class="brand__word">Digital<span>Soul</span></span>
+        </a>
+        <p class="footer__tag">Crecimiento, medios, contenido y datos. Diseñados para generar impacto.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Agencia">
+        <h4>Agencia</h4>
+        <a href="#work">Casos</a>
+        <a href="#capabilities">Capacidades</a>
+        <a href="#process">Proceso</a>
+        <a href="#insights">Ideas</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Conectar">
+        <h4>Conectar</h4>
+        <a href="https://www.instagram.com/digitalsoul.agency/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://digitalsoul.agency/" target="_blank" rel="noopener">Sitio web</a>
+        <a href="#contact">LinkedIn</a>
+        <a href="/cdn-cgi/l/email-protection#e981868588a98d808e809d88859a869c85c7888e8c878a90">Email</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Iniciar un proyecto</h4>
+        <a href="/cdn-cgi/l/email-protection#5c3433303d1c38353b35283d302f332930723d3b39323f25" class="footer__mail"><span class="__cf_email__" data-cfemail="9cf4f3f0fddcf8f5fbf5e8fdf0eff3e9f0b2fdfbf9f2ffe5">[email&#160;protected]</span></a>
+        <p class="footer__loc">Buenos Aires · LATAM</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Digital Soul. Todos los derechos reservados.</span>
+      <span>Sistemas de crecimiento para marcas que no se conforman con el promedio.</span>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/script.js" defer></script>
+</body>
+</html>
