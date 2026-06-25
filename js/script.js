@@ -157,36 +157,9 @@
     });
   }
 
-  /* ---------- Card tilt (pillars) ---------- */
-  if (!prefersReduced && window.matchMedia("(hover:hover)").matches) {
-    document.querySelectorAll("[data-tilt]").forEach((el) => {
-      el.addEventListener("mousemove", (e) => {
-        const r = el.getBoundingClientRect();
-        const px = (e.clientX - r.left) / r.width - 0.5;
-        const py = (e.clientY - r.top) / r.height - 0.5;
-        el.style.transform = `perspective(900px) rotateX(${py * -4}deg) rotateY(${px * 4}deg) translateY(-4px)`;
-      });
-      el.addEventListener("mouseleave", () => {
-        el.style.transform = "";
-      });
-    });
-  }
+  /* ---------- Card tilt (pillars) — removed for flat brand aesthetic ---------- */
 
-  /* ---------- Cursor glow ---------- */
-  const glow = document.getElementById("cursorGlow");
-  if (glow && !prefersReduced && window.matchMedia("(hover:hover)").matches) {
-    let gx = window.innerWidth / 2, gy = window.innerHeight / 2, tx = gx, ty = gy;
-    window.addEventListener("mousemove", (e) => { tx = e.clientX; ty = e.clientY; });
-    const loop = () => {
-      gx += (tx - gx) * 0.12;
-      gy += (ty - gy) * 0.12;
-      glow.style.transform = `translate(${gx}px, ${gy}px) translate(-50%,-50%)`;
-      requestAnimationFrame(loop);
-    };
-    loop();
-  } else if (glow) {
-    glow.style.display = "none";
-  }
+  /* ---------- Cursor glow — removed for flat brand aesthetic ---------- */
 
   /* ---------- Hero parallax on video ---------- */
   const heroVideo = document.querySelector(".hero__video");

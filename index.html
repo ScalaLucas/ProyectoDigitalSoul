@@ -9,35 +9,24 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./estilos/estilos.css" />
 </head>
 <body>
 
-  <!-- Scroll progress -->
+  <!-- Barra de progreso -->
   <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Cursor glow -->
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#top" class="brand" aria-label="Inicio Digital Soul">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28">
-            <defs>
-              <linearGradient id="dsmark" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#E53935" />
-                <stop offset="0.55" stop-color="#FF5A52" />
-                <stop offset="1" stop-color="#FF6B57" />
-              </linearGradient>
-            </defs>
-            <path d="M6 5h10c7.2 0 11.5 4.4 11.5 11S23.2 27 16 27H6V5Zm6 5.2v11.6h3.4c3.9 0 6.2-2.2 6.2-5.8s-2.3-5.8-6.2-5.8H12Z" fill="url(#dsmark)" />
-          </svg>
+        <span class="brand__iso" aria-hidden="true">
+          <img class="brand__iso-dark" src="assets/logos/ds-iso-dark.png" alt="" />
+          <img class="brand__iso-light" src="assets/logos/ds-iso-light.png" alt="" />
         </span>
-        <span class="brand__word">Digital<span>Soul</span></span>
+        Digital<span class="brand__soul">Soul</span><span class="brand__suffix">.Agency</span>
       </a>
 
       <nav class="nav__links" aria-label="Principal">
@@ -48,7 +37,7 @@
         <a href="#insights">Ideas</a>
       </nav>
 
-      <a href="#contact" class="btn btn--pill" data-magnetic>Hablemos</a>
+      <a href="#contact" class="btn btn--red" data-magnetic>Hablemos</a>
 
       <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span>
@@ -60,31 +49,29 @@
       <a href="#process">Proceso</a>
       <a href="#results">Resultados</a>
       <a href="#insights">Ideas</a>
-      <a href="#contact" class="btn btn--pill">Hablemos</a>
+      <a href="#contact" class="btn btn--red">Hablemos</a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- ============ 01 HERO ============ -->
+    <!-- ============ 01 HERO · NEGRO (apertura) ============ -->
     <section class="hero" id="hero">
+      <div class="hero__rule" aria-hidden="true"></div>
       <div class="hero__media" aria-hidden="true">
-        <video class="hero__video" autoplay muted loop playsinline poster="./assets/galicia.png">
-          <source src="./assets/DS_Web_Intro.mp4" type="video/mp4" />
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/images/content-mouse.png">
+          <source src="assets/videos/hero-intro.mp4" type="video/mp4" />
         </video>
         <div class="hero__scrim"></div>
-        <div class="hero__grid"></div>
       </div>
 
       <div class="hero__content container">
-        <p class="eyebrow reveal" data-reveal>
-          <span class="eyebrow__dot"></span>
-          Medios&nbsp;·&nbsp;Contenido&nbsp;·&nbsp;Datos&nbsp;·&nbsp;Performance
-        </p>
+        <span class="pill pill--red reveal" data-reveal>
+          <span class="pill__dot"></span>Medios · Contenido · Datos · Performance
+        </span>
 
         <h1 class="hero__title reveal" data-reveal>
-          Diseñamos sistemas de crecimiento para marcas que no se conforman con el
-          <span class="grad-text">promedio.</span>
+          Diseñamos sistemas de crecimiento para marcas que no se conforman con el <span class="t-red">promedio.</span>
         </h1>
 
         <p class="hero__sub reveal" data-reveal>
@@ -93,64 +80,64 @@
         </p>
 
         <div class="hero__cta reveal" data-reveal>
-          <a href="#contact" class="btn btn--primary btn--lg" data-magnetic>Hablemos
+          <a href="#contact" class="btn btn--red btn--lg" data-magnetic>Hablemos
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="#work" class="btn btn--ghost btn--lg" data-magnetic>Ver nuestro trabajo</a>
+          <a href="#work" class="btn btn--ghost-light btn--lg" data-magnetic>Ver nuestro trabajo</a>
         </div>
 
         <div class="hero__metrics reveal" data-reveal>
           <div class="metric"><span class="metric__num" data-count="500" data-suffix="+">0</span><span class="metric__label">Campañas ejecutadas</span></div>
           <div class="metric"><span class="metric__num" data-count="40" data-suffix="+">0</span><span class="metric__label">Marcas enterprise</span></div>
           <div class="metric"><span class="metric__num" data-count="8" data-suffix="">0</span><span class="metric__label">Mercados</span></div>
-          <div class="metric"><span class="metric__num" data-count="9" data-suffix=" años">0</span><span class="metric__label">Generando crecimiento</span></div>
+          <div class="metric"><span class="metric__num" data-count="9" data-suffix="">0</span><span class="metric__label">Años de crecimiento</span></div>
         </div>
       </div>
 
-      <a href="#trust" class="hero__scroll" aria-label="Desplazar">
-        <span></span> Scroll
-      </a>
+      <a href="#trust" class="hero__scroll" aria-label="Desplazar"><span></span> Scroll</a>
     </section>
 
-    <!-- ============ 02 TRUST ============ -->
-    <section class="trust" id="trust">
+    <!-- ============ 02 TRUST · BLANCO ============ -->
+    <section class="trust surface-white" id="trust">
       <div class="container trust__head">
         <p class="trust__label">Marcas líderes que confían en nosotros</p>
       </div>
       <div class="marquee" aria-label="Logos de clientes">
         <div class="marquee__track">
-          <span class="logo-word">Galicia</span>
-          <span class="logo-word">La Serenísima</span>
-          <span class="logo-word">Las Marías</span>
-          <span class="logo-word">Rapipago</span>
-          <span class="logo-word">Warner Music</span>
-          <span class="logo-word">Chery</span>
-          <span class="logo-word">Grupo Petersen</span>
-          <span class="logo-word">Mastellone</span>
-          <!-- duplicado para loop continuo -->
-          <span class="logo-word">Galicia</span>
-          <span class="logo-word">La Serenísima</span>
-          <span class="logo-word">Las Marías</span>
-          <span class="logo-word">Rapipago</span>
-          <span class="logo-word">Warner Music</span>
-          <span class="logo-word">Chery</span>
-          <span class="logo-word">Grupo Petersen</span>
-          <span class="logo-word">Mastellone</span>
+          <span class="logo-word lw--light">Galicia</span>
+          <span class="logo-word lw--italic">La Serenísima</span>
+          <span class="logo-word lw--title">Las Marías</span>
+          <span class="logo-word lw--bold">Rapipago</span>
+          <span class="logo-word lw--book">Warner Music</span>
+          <span class="logo-word lw--caps">Chery</span>
+          <span class="logo-word lw--title">Grupo Petersen</span>
+          <span class="logo-word lw--caps-m">Mastellone</span>
+          <span class="logo-word lw--light">Galicia</span>
+          <span class="logo-word lw--italic">La Serenísima</span>
+          <span class="logo-word lw--title">Las Marías</span>
+          <span class="logo-word lw--bold">Rapipago</span>
+          <span class="logo-word lw--book">Warner Music</span>
+          <span class="logo-word lw--caps">Chery</span>
+          <span class="logo-word lw--title">Grupo Petersen</span>
+          <span class="logo-word lw--caps-m">Mastellone</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ 03 WHAT WE DO ============ -->
-    <section class="pillars section" id="services">
+    <!-- ============ 03 PILARES · BLANCO ============ -->
+    <section class="pillars section surface-white" id="services">
       <div class="container">
         <header class="section__head">
-          <p class="kicker reveal" data-reveal>01 — Qué hacemos</p>
+          <div class="head-meta reveal" data-reveal>
+            <span class="s-tab">01</span>
+            <span class="oval">Qué hacemos</span>
+          </div>
           <h2 class="section__title reveal" data-reveal>Tres disciplinas.<br/>Un motor de crecimiento.</h2>
           <p class="section__lead reveal" data-reveal>Integramos medios, contenido y datos en un mismo sistema operativo, para que cada peso invertido se transforme en resultados de negocio.</p>
         </header>
 
         <div class="pillars__grid">
-          <article class="pillar card reveal" data-reveal data-tilt>
+          <article class="pillar card reveal" data-reveal>
             <div class="pillar__top">
               <span class="pillar__index">M</span>
               <span class="pillar__icon">
@@ -166,7 +153,7 @@
             </ul>
           </article>
 
-          <article class="pillar card reveal" data-reveal data-tilt>
+          <article class="pillar card reveal" data-reveal>
             <div class="pillar__top">
               <span class="pillar__index">C</span>
               <span class="pillar__icon">
@@ -182,7 +169,7 @@
             </ul>
           </article>
 
-          <article class="pillar card reveal" data-reveal data-tilt>
+          <article class="pillar card reveal" data-reveal>
             <div class="pillar__top">
               <span class="pillar__index">D</span>
               <span class="pillar__icon">
@@ -201,13 +188,13 @@
       </div>
     </section>
 
-    <!-- ============ 03.5 DATA INTELLIGENCE ============ -->
-    <section class="intel section" id="intel">
-      <div class="intel__bg" aria-hidden="true"></div>
+    <!-- ============ 03.5 INTELIGENCIA DE DATOS · NEGRO ============ -->
+    <section class="intel section surface-black" id="intel">
+      <span class="arc-deco arc-deco--br" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="52"/><circle cx="100" cy="100" r="74"/><circle cx="100" cy="100" r="96"/></svg></span>
       <div class="container intel__grid">
         <div class="intel__copy">
-          <p class="kicker reveal" data-reveal>Inteligencia de datos</p>
-          <h2 class="section__title reveal" data-reveal>Decisiones en tiempo real,<br/>no reportes a fin de mes.</h2>
+          <span class="oval oval--light reveal" data-reveal style="display:inline-flex">Inteligencia de datos</span>
+          <h2 class="section__title reveal" data-reveal style="margin-top:20px">Decisiones en tiempo real,<br/>no reportes a fin de mes.</h2>
           <p class="section__lead reveal" data-reveal>Centralizamos medios, contenido y negocio en un mismo tablero. Medimos lo que mueve la aguja y ajustamos la inversión mientras la campaña corre.</p>
           <ul class="intel__list reveal" data-reveal>
             <li><span class="intel__dot"></span>Medición de ciclo cerrado y atribución</li>
@@ -249,20 +236,16 @@
             <svg class="dash__svg" viewBox="0 0 420 150" preserveAspectRatio="none" role="img" aria-label="Curva de ingresos atribuidos">
               <defs>
                 <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#E53935" stop-opacity="0.42" />
-                  <stop offset="1" stop-color="#E53935" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stop-color="#FF6B57" />
-                  <stop offset="1" stop-color="#FF5A52" />
+                  <stop offset="0" stop-color="#F00F1A" stop-opacity="0.40" />
+                  <stop offset="1" stop-color="#F00F1A" stop-opacity="0" />
                 </linearGradient>
               </defs>
               <line x1="0" y1="37" x2="420" y2="37" class="dash__gridline" />
               <line x1="0" y1="75" x2="420" y2="75" class="dash__gridline" />
               <line x1="0" y1="113" x2="420" y2="113" class="dash__gridline" />
               <path class="dash__area" d="M0,118 C40,110 70,92 110,96 C150,100 175,70 210,64 C250,57 280,40 320,34 C360,28 390,22 420,16 L420,150 L0,150 Z" fill="url(#areaGrad)" />
-              <path class="dash__line" d="M0,118 C40,110 70,92 110,96 C150,100 175,70 210,64 C250,57 280,40 320,34 C360,28 390,22 420,16" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round" />
-              <circle class="dash__pulse" cx="420" cy="16" r="4" fill="#FF6B57" />
+              <path class="dash__line" d="M0,118 C40,110 70,92 110,96 C150,100 175,70 210,64 C250,57 280,40 320,34 C360,28 390,22 420,16" fill="none" stroke="#F00F1A" stroke-width="2.5" stroke-linecap="round" />
+              <circle class="dash__pulse" cx="420" cy="16" r="4" fill="#F00F1A" />
             </svg>
           </div>
 
@@ -280,12 +263,15 @@
       </div>
     </section>
 
-    <!-- ============ 04 CAPABILITIES ============ -->
-    <section class="caps section" id="capabilities">
+    <!-- ============ 04 CAPACIDADES · BLANCO ============ -->
+    <section class="caps section surface-white" id="capabilities">
       <div class="container">
         <header class="section__head section__head--split">
           <div>
-            <p class="kicker reveal" data-reveal>02 — Capacidades</p>
+            <div class="head-meta reveal" data-reveal>
+              <span class="s-tab">02</span>
+              <span class="oval">Capacidades</span>
+            </div>
             <h2 class="section__title reveal" data-reveal>Un stack completo<br/>bajo un mismo techo.</h2>
           </div>
           <p class="section__lead reveal" data-reveal>Del primer insight a la última conversión: diez capacidades integradas, orquestadas como un solo equipo.</p>
@@ -306,12 +292,15 @@
       </div>
     </section>
 
-    <!-- ============ 05 CASE STUDIES ============ -->
-    <section class="work section" id="work">
+    <!-- ============ 05 CASOS · BLANCO ============ -->
+    <section class="work section surface-white" id="work">
       <div class="container">
         <header class="section__head section__head--split">
           <div>
-            <p class="kicker reveal" data-reveal>03 — Casos seleccionados</p>
+            <div class="head-meta reveal" data-reveal>
+              <span class="s-tab">03</span>
+              <span class="oval">Casos seleccionados</span>
+            </div>
             <h2 class="section__title reveal" data-reveal>Resultados,<br/>no impresiones.</h2>
           </div>
           <p class="section__lead reveal" data-reveal>Arrastrá para explorar. Cada proyecto se mide por su impacto en el negocio, no por métricas de vanidad.</p>
@@ -322,8 +311,8 @@
         <div class="work__track">
 
           <article class="case reveal" data-reveal>
-            <div class="case__media">
-              <img src="./assets/galicia.png" alt="Campaña always-on de Galicia" loading="lazy" />
+            <div class="case__media duotone">
+              <img src="assets/images/case-galicia.png" alt="Campaña always-on de Galicia" loading="lazy" />
             </div>
             <div class="case__body">
               <div class="case__tags"><span>Banca</span><span>Performance</span><span>Always-on</span></div>
@@ -338,8 +327,8 @@
           </article>
 
           <article class="case reveal" data-reveal>
-            <div class="case__media">
-              <img src="./assets/laserenisima.png" alt="Contenido premium de La Serenísima" loading="lazy" />
+            <div class="case__media duotone">
+              <img src="assets/images/case-laserenisima.png" alt="Contenido premium de La Serenísima" loading="lazy" />
             </div>
             <div class="case__body">
               <div class="case__tags"><span>Consumo masivo</span><span>Contenido</span><span>Marca</span></div>
@@ -354,9 +343,9 @@
           </article>
 
           <article class="case reveal" data-reveal>
-            <div class="case__media case__media--video">
-              <video autoplay muted loop playsinline poster="./assets/image-14.png">
-                <source src="./assets/DS_Web_cultura.mp4" type="video/mp4" />
+            <div class="case__media case__media--video duotone">
+              <video autoplay muted loop playsinline poster="assets/images/content-mouse.png">
+                <source src="assets/videos/cultura.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="case__body">
@@ -372,8 +361,8 @@
           </article>
 
           <article class="case reveal" data-reveal>
-            <div class="case__media">
-              <img src="./assets/crecimiento.png" alt="Producción de contenido social-first" loading="lazy" />
+            <div class="case__media duotone">
+              <img src="assets/images/content-mouse.png" alt="Producción de contenido social-first" loading="lazy" />
             </div>
             <div class="case__body">
               <div class="case__tags"><span>Entretenimiento</span><span>Datos</span><span>Crecimiento</span></div>
@@ -391,11 +380,15 @@
       </div>
     </section>
 
-    <!-- ============ 06 PROCESS ============ -->
-    <section class="process section" id="process">
+    <!-- ============ 06 PROCESO · ROJO (portada/impacto) ============ -->
+    <section class="process section surface-red" id="process">
+      <span class="arc-deco arc-deco--tl" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="52"/><circle cx="100" cy="100" r="74"/><circle cx="100" cy="100" r="96"/></svg></span>
       <div class="container">
         <header class="section__head">
-          <p class="kicker reveal" data-reveal>04 — Cómo trabajamos</p>
+          <div class="head-meta reveal" data-reveal>
+            <span class="s-tab s-tab--light">04</span>
+            <span class="oval oval--light">Cómo trabajamos</span>
+          </div>
           <h2 class="section__title reveal" data-reveal>Un sistema, no una<br/>sucesión de campañas.</h2>
         </header>
 
@@ -424,26 +417,33 @@
       </div>
     </section>
 
-    <!-- ============ 07 RESULTS ============ -->
-    <section class="results section" id="results">
+    <!-- ============ 07 RESULTADOS · NEGRO (impacto) ============ -->
+    <section class="results section surface-black" id="results">
+      <span class="arc-deco arc-deco--br" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="52"/><circle cx="100" cy="100" r="74"/><circle cx="100" cy="100" r="96"/></svg></span>
       <div class="container">
-        <p class="kicker kicker--center reveal" data-reveal>05 — El impacto</p>
+        <div class="head-meta reveal" data-reveal style="justify-content:center">
+          <span class="s-tab">05</span>
+          <span class="oval oval--light">El impacto</span>
+        </div>
         <h2 class="results__title reveal" data-reveal>Números que mueven<br/>el negocio.</h2>
         <div class="results__grid">
-          <div class="result reveal" data-reveal><span class="result__num"><span data-count="3.2" data-decimals="1">0</span>B</span><span class="result__label">Impresiones entregadas</span></div>
-          <div class="result reveal" data-reveal><span class="result__num">+<span data-count="280">0</span>%</span><span class="result__label">Mejora promedio de ROAS</span></div>
-          <div class="result reveal" data-reveal><span class="result__num"><span data-count="500">0</span>+</span><span class="result__label">Campañas ejecutadas</span></div>
-          <div class="result reveal" data-reveal><span class="result__num"><span data-count="40">0</span>+</span><span class="result__label">Marcas enterprise</span></div>
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="3.2" data-decimals="1">0</span><span class="lbl">B</span></span><span class="result__label">Impresiones entregadas</span></div>
+          <div class="result reveal" data-reveal><span class="result__num">+<span data-count="280">0</span><span class="lbl">%</span></span><span class="result__label">Mejora promedio de ROAS</span></div>
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="500">0</span><span class="lbl">+</span></span><span class="result__label">Campañas ejecutadas</span></div>
+          <div class="result reveal" data-reveal><span class="result__num"><span data-count="40">0</span><span class="lbl">+</span></span><span class="result__label">Marcas enterprise</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 08 INSIGHTS ============ -->
-    <section class="insights section" id="insights">
+    <!-- ============ 08 IDEAS · BLANCO ============ -->
+    <section class="insights section surface-white" id="insights">
       <div class="container">
         <header class="section__head section__head--split">
           <div>
-            <p class="kicker reveal" data-reveal>06 — Ideas</p>
+            <div class="head-meta reveal" data-reveal>
+              <span class="s-tab">06</span>
+              <span class="oval">Ideas</span>
+            </div>
             <h2 class="section__title reveal" data-reveal>Pensamiento de agencia,<br/>compartido sin vueltas.</h2>
           </div>
           <a href="#contact" class="link-more reveal" data-reveal>Todas las ideas →</a>
@@ -478,39 +478,42 @@
       </div>
     </section>
 
-    <!-- ============ 09 TESTIMONIALS ============ -->
-    <section class="quotes section" id="testimonials">
+    <!-- ============ 09 TESTIMONIOS · BLANCO ============ -->
+    <section class="quotes section surface-white" id="testimonials">
       <div class="container">
         <header class="section__head">
-          <p class="kicker reveal" data-reveal>07 — En sus palabras</p>
+          <div class="head-meta reveal" data-reveal>
+            <span class="s-tab">07</span>
+            <span class="oval">En sus palabras</span>
+          </div>
           <h2 class="section__title reveal" data-reveal>Lo que dicen<br/>nuestros socios.</h2>
         </header>
         <div class="quotes__grid">
           <figure class="quote card reveal" data-reveal>
-            <blockquote>"Digital Soul no solo gestionó nuestros medios: replanteó cómo pensamos el crecimiento. Los resultados hablan por sí solos."</blockquote>
+            <blockquote>Digital Soul no solo gestionó nuestros medios: replanteó cómo pensamos el crecimiento. Los resultados hablan por sí solos.</blockquote>
             <figcaption><span class="quote__name">Dirección de Marketing</span><span class="quote__role">Banco nacional</span></figcaption>
           </figure>
           <figure class="quote card reveal" data-reveal>
-            <blockquote>"Un socio de verdad. Estratégico, rápido y obsesionado con el número que realmente le importa al negocio."</blockquote>
+            <blockquote>Un socio de verdad. Estratégico, rápido y obsesionado con el número que realmente le importa al negocio.</blockquote>
             <figcaption><span class="quote__name">VP de Marca</span><span class="quote__role">Consumo masivo líder</span></figcaption>
           </figure>
           <figure class="quote card reveal" data-reveal>
-            <blockquote>"El equipo creativo más fluido en datos con el que trabajamos en la región. Hacen que el crecimiento se sienta diseñado."</blockquote>
+            <blockquote>El equipo creativo más fluido en datos con el que trabajamos en la región. Hacen que el crecimiento se sienta diseñado.</blockquote>
             <figcaption><span class="quote__name">Head de Digital</span><span class="quote__role">Entretenimiento global</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ 10 FINAL CTA ============ -->
-    <section class="cta section" id="contact">
-      <div class="cta__glow" aria-hidden="true"></div>
+    <!-- ============ 10 CTA FINAL · ROJO (cierre/impacto) ============ -->
+    <section class="cta section surface-red" id="contact">
+      <span class="arc-deco arc-deco--tl" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="52"/><circle cx="100" cy="100" r="74"/><circle cx="100" cy="100" r="96"/></svg></span>
       <div class="container cta__inner">
-        <p class="kicker kicker--center reveal" data-reveal>Construyamos</p>
-        <h2 class="cta__title reveal" data-reveal>¿Listos para crecer<br/><span class="grad-text">más allá del marketing?</span></h2>
+        <span class="oval oval--light reveal" data-reveal style="display:inline-flex; margin-bottom:24px">Construyamos</span>
+        <h2 class="cta__title reveal" data-reveal>¿Listos para crecer<br/>más allá del marketing?</h2>
         <p class="cta__sub reveal" data-reveal>Contanos dónde querés llevar el negocio. Nosotros diseñamos el sistema para llegar.</p>
         <div class="cta__actions reveal" data-reveal>
-          <a href="/cdn-cgi/l/email-protection#026a6d6e6342666b656b76636e716d776e2c6365676c617b" class="btn btn--primary btn--lg" data-magnetic>Construyamos algo extraordinario
+          <a href="/cdn-cgi/l/email-protection#8de5e2e1eccde9e4eae4f9ece1fee2f8e1a3eceae8e3eef4" class="btn btn--white btn--lg" data-magnetic>Construyamos algo extraordinario
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -519,16 +522,11 @@
 
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ============ FOOTER · NEGRO ============ -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#top" class="brand">
-          <span class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="26" height="26"><path d="M6 5h10c7.2 0 11.5 4.4 11.5 11S23.2 27 16 27H6V5Zm6 5.2v11.6h3.4c3.9 0 6.2-2.2 6.2-5.8s-2.3-5.8-6.2-5.8H12Z" fill="url(#dsmark)" /></svg>
-          </span>
-          <span class="brand__word">Digital<span>Soul</span></span>
-        </a>
+        <a href="#top" class="brand"><span class="brand__iso" aria-hidden="true"><img class="brand__iso-dark" src="assets/logos/ds-iso-dark.png" alt="" /></span>Digital<span class="brand__soul">Soul</span><span class="brand__suffix">.Agency</span></a>
         <p class="footer__tag">Crecimiento, medios, contenido y datos. Diseñados para generar impacto.</p>
       </div>
 
@@ -545,12 +543,12 @@
         <a href="https://www.instagram.com/digitalsoul.agency/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://digitalsoul.agency/" target="_blank" rel="noopener">Sitio web</a>
         <a href="#contact">LinkedIn</a>
-        <a href="/cdn-cgi/l/email-protection#e981868588a98d808e809d88859a869c85c7888e8c878a90">Email</a>
+        <a href="/cdn-cgi/l/email-protection#d7bfb8bbb697b3beb0bea3b6bba4b8a2bbf9b6b0b2b9b4ae">Email</a>
       </nav>
 
       <div class="footer__col">
         <h4>Iniciar un proyecto</h4>
-        <a href="/cdn-cgi/l/email-protection#5c3433303d1c38353b35283d302f332930723d3b39323f25" class="footer__mail"><span class="__cf_email__" data-cfemail="9cf4f3f0fddcf8f5fbf5e8fdf0eff3e9f0b2fdfbf9f2ffe5">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#50383f3c31103439373924313c233f253c7e3137353e3329" class="footer__mail"><span class="__cf_email__" data-cfemail="1d7572717c5d79747a74697c716e726871337c7a78737e64">[email&#160;protected]</span></a>
         <p class="footer__loc">Buenos Aires · LATAM</p>
       </div>
     </div>
